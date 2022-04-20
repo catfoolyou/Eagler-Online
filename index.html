@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eaglercraft</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow, noarchive">
+<script type="text/javascript" src="classes.js"></script>
+<script type="text/javascript">
+if(document.location.href.startsWith("file:")) {
+alert("You're not supposed to 'open' this file in your browser. Please upload this folder to your HTTP(s) server and access it via the internet. This is not a bug, please read the documentation");
+}else {
+window.addEventListener("load", function(){
+window.minecraftOpts = [
+"game_frame","assets.epk",
+"CgAACQAHc2VydmVycwoAAAAMCAACaXAAHXdzczovL21jLnByaW1pdHQuZGV2L3N1cnZpdmFsAQALaGlkZUFkZHJlc3MBAAgAAmlwABp3c3M6Ly9hZW9uLW5ldHdvcmsudGsvYWVvbggABG5hbWUACHRlbXBsYXRlAQALaGlkZUFkZHJlc3MBAAgAAmlwAB13c3M6Ly90aXRhbml1bW5ldHdvcmsub3JnL2VhZwgABG5hbWUACHRlbXBsYXRlAQALaGlkZUFkZHJlc3MBAAgAAmlwADZ3c3M6Ly9vbGl2Y3JhZnRvaXN0aGVvbmUub2xsaWV3b2xsaWUxMjMucmVwbC5jby9zZXJ2ZXIIAARuYW1lAAh0ZW1wbGF0ZQEAC2hpZGVBZGRyZXNzAQAIAAJpcAAid3NzOi8vd3d3Lm1lZGljaW5lc2Nob29sLmdxL3NlcnZlcggABG5hbWUACHRlbXBsYXRlAQALaGlkZUFkZHJlc3MBCAAKZm9yY2VkTU9URAAZdGhpcyBpcyBub3QgYSByZWFsIHNlcnZlcgAIAAJpcAAUd3NzOi8vbWMuYjJzZXJ2ZXIudGsIAARuYW1lAAh0ZW1wbGF0ZQEAC2hpZGVBZGRyZXNzAQAIAAJpcAAid3NzOi8vdmFuaWxsYWNyYWZ0c21wLm9yZy9mYWN0aW9ucwgABG5hbWUACHRlbXBsYXRlAQALaGlkZUFkZHJlc3MBAAgAAmlwAB13c3M6Ly9zdXMuc2hobm93aXNub3R0aGV0aS5tZQgABG5hbWUACHRlbXBsYXRlAQALaGlkZUFkZHJlc3MBAAgAAmlwACl3c3M6Ly9jcmVhdGl2ZS5nZW9yZ2UwODA5MS5yZXBsLmNvL3NlcnZlcggABG5hbWUACHRlbXBsYXRlAQALaGlkZUFkZHJlc3MBAAgAAmlwABV3c3M6Ly9tZXNzLmV1Lm9yZy9zMS8IAARuYW1lAAh0ZW1wbGF0ZQEAC2hpZGVBZGRyZXNzAQAIAAJpcAAcd3NzOi8vY3JhZnRjbHVlLnJvY2tzL3NlcnZlcggABG5hbWUACHRlbXBsYXRlAQALaGlkZUFkZHJlc3MBAAgAAmlwAB13c3M6Ly9zdXMuc2hobm93aXNub3R0aGV0aS5tZQgABG5hbWUACHRlbXBsYXRlAQALaGlkZUFkZHJlc3MBAAA="
+];
+(function(){
+var q = window.location.search;
+if(typeof q === 'string' && q.startsWith("?")) {
+	q = new URLSearchParams(q);
+	var s = q.get("server");
+	if(s) window.minecraftOpts.push(s);
+}
+})();
+main();
+});}
+</script>
+</head>
+<body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
+</body>
+</html>
