@@ -44,7 +44,11 @@ a.nolink:active {
 </style>
 <script type="text/javascript">
 window.addEventListener("load", function(){
-window.minecraftOpts = [
+    window.focus();
+    document.body.addEventListener('click',function(e) {
+        window.focus();
+    },false);
+    window.minecraftOpts = [
 	"game_frame","assets2.epk",
 	"CgAACQAHc2VydmVycwoAAAAFCAACaXAAJHdzczovL3NlYWxjcmFmdC5kZG5zLm5ldDo0NDIvc2VydmVycwgABG5hbWUACVNlYWxDcmFmdAEAC2hpZGVBZGRyZXNzAAAIAAJpcAAdd3NzOi8vbWMucHJpbWl0dC5kZXYvc3Vydml2YWwIAARuYW1lAAdQcmltaXR0AQALaGlkZUFkZHJlc3MAAAgAAmlwABt3c3M6Ly9hZW9uLm1lZ2F0a2MucmVwbC5jby8IAARuYW1lAARBZW9uAQALaGlkZUFkZHJlc3MAAAgAAmlwAB93c3M6Ly9wbGF5LnZhbmlsbGFjcmFmdHNtcC5vcmcvCAAEbmFtZQAMVmFuaWxsYUNyYWZ0AQALaGlkZUFkZHJlc3MAAAgAAmlwAB13c3M6Ly9zdXMuc2hobm93aXNub3R0aGV0aS5tZQgABG5hbWUAEGF5dW5hbWkncyBzZXJ2ZXIBAAtoaWRlQWRkcmVzcwAAAQAJaGlkZV9kb3duAQgAD3NlcnZlckxpc3RUaXRsZQAbQXlvbnVsbCBydW5zIGEgc2VydmVyIGxpc3Q6CAAOc2VydmVyTGlzdExpbmsAIWh0dHBzOi8vZWFnbGVyLm51bGx5LnRlY2gvc2VydmVycwoACG1haW5NZW51CAAJaXRlbUxpbmUwABBQbGF5IEVhZ2xlcmNyYWZ0CAAJaXRlbUxpbmUxABFCZXRhIFNpbmdsZXBsYXllcggACWl0ZW1MaW5lMgAOKE1DLiBCZXRhIDEuMykIAAhpdGVtTGluawAoaHR0cHM6Ly9nLmxheDFkdWRlLm5ldC9lYWdsZXJjcmFmdC9iZXRhLwAA"
 ];
