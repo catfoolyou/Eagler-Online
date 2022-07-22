@@ -5,44 +5,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow, noarchive">
-<script type="text/javascript" src="alts.js"></script>
-<script type="text/javascript" src="classes5.js"></script>
+<script type="text/javascript" src="classes.js"></script>
 <script type="text/javascript" src="eagswebrtc.js"></script>
-<style type="text/css">
-a.nolink, a.nolink:link, a.nolink:hover, a.nolink:visited {
-	color: white;
-}
-a.nolink:active {
-	color: yellow;
-}
-#available {
-	position: fixed;
-	background-color: #333333;
-	top: 0px;
-	right: 0px;
-	padding: 10px 30px;
-	width:min(80vw,250px); 
-	color:white;
-}
-#available p {
-	margin-block-start: 0px;
-	margin-block-end: 0px;
-}
-#available_hide {
-	position: fixed;
-	top: 10px;
-	right: 10px;
-	margin: 0px;
-	padding: 2px;
-	font-weight: bold;
-	border: 1px solid white;
-	font-size: 12px;
-	line-height: 12px;
-	cursor: pointer;
-	background-color: #333333;
-}
-</style>
 <script type="text/javascript">
+if(document.location.href.startsWith("file:")) {
+alert("You're not supposed to 'open' this file in your browser. Please upload this folder to your HTTP(s) server and access it via the internet. This is not a bug, please read the documentation");
+}else {
 window.addEventListener('load', function () {
     window.focus();
     document.body.addEventListener('click',function(e) {
@@ -51,8 +19,8 @@ window.addEventListener('load', function () {
 });
 window.addEventListener("load", function(){
 window.minecraftOpts = [
-	"game_frame","assets2.epk",
-	"CgAACQAHc2VydmVycwoAAAAFCAACaXAAJHdzczovL3NlYWxjcmFmdC5kZG5zLm5ldDo0NDIvc2VydmVycwgABG5hbWUACVNlYWxDcmFmdAEAC2hpZGVBZGRyZXNzAAAIAAJpcAAdd3NzOi8vbWMucHJpbWl0dC5kZXYvc3Vydml2YWwIAARuYW1lAAdQcmltaXR0AQALaGlkZUFkZHJlc3MAAAgAAmlwABt3c3M6Ly9hZW9uLm1lZ2F0a2MucmVwbC5jby8IAARuYW1lAARBZW9uAQALaGlkZUFkZHJlc3MAAAgAAmlwAB93c3M6Ly9wbGF5LnZhbmlsbGFjcmFmdHNtcC5vcmcvCAAEbmFtZQAMVmFuaWxsYUNyYWZ0AQALaGlkZUFkZHJlc3MAAAgAAmlwAB13c3M6Ly9zdXMuc2hobm93aXNub3R0aGV0aS5tZQgABG5hbWUAEGF5dW5hbWkncyBzZXJ2ZXIBAAtoaWRlQWRkcmVzcwAAAQAJaGlkZV9kb3duAQgAD3NlcnZlckxpc3RUaXRsZQAbQXlvbnVsbCBydW5zIGEgc2VydmVyIGxpc3Q6CAAOc2VydmVyTGlzdExpbmsAIWh0dHBzOi8vZWFnbGVyLm51bGx5LnRlY2gvc2VydmVycwoACG1haW5NZW51CAAJaXRlbUxpbmUwABBQbGF5IEVhZ2xlcmNyYWZ0CAAJaXRlbUxpbmUxABFCZXRhIFNpbmdsZXBsYXllcggACWl0ZW1MaW5lMgAOKE1DLiBCZXRhIDEuMykIAAhpdGVtTGluawAoaHR0cHM6Ly9nLmxheDFkdWRlLm5ldC9lYWdsZXJjcmFmdC9iZXRhLwAA"
+"game_frame","assets.epk",
+"CgAACQAHc2VydmVycwoAAAABCAACaXAAIHdzKHMpOi8vIChhZGRyZXNzIGhlcmUpOihwb3J0KSAvCAAEbmFtZQAIdGVtcGxhdGUBAAtoaWRlQWRkcmVzcwEIAApmb3JjZWRNT1REABl0aGlzIGlzIG5vdCBhIHJlYWwgc2VydmVyAAA="
 ];
 (function(){
 var q = window.location.search;
@@ -62,22 +30,10 @@ if(typeof q === 'string' && q.startsWith("?")) {
 	if(s) window.minecraftOpts.push(s);
 }
 })();
-setTimeout(function() { document.getElementById("available").style.display = "block"; }, 5000 );
-window.remAvailable = setTimeout(function() { document.getElementById("available").remove(); }, 18000 );
-document.getElementById("available_hide").addEventListener("click", function() {
-	clearTimeout(window.remAvailable);
-	document.getElementById("available").remove();
-});
 main();
-});
+});}
 </script>
 </head>
 <body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
-<div id="available" style="display:none;">
-<p id="available_hide">&nbsp;X&nbsp;</p>
-<p style="margin:0px;">For people with restricted internet access, eaglercraft is available as a downloadable HTML file, <a class="nolink" href="https://github.com/LAX1DUDE/eaglercraft/raw/main/stable-download/Offline_Download_Version.html">click here</a> to download the latest version</p>
-<p style="font-weight:bold;margin-top:10px;">This page is part of <a class="nolink" href="https://g.eags.us/eaglercraft/">g.eags.us</a></p>
-<p style="font-weight:bold;margin:10px 0px 5px 0px;">You can <a class="nolink" href="javascript:view_alts();">click here</a> for a list of other unblocked URLs for eagler</p>
-</div>
 </body>
 </html>
