@@ -18,10 +18,21 @@ window.addEventListener('load', function () {
     },false);
 });
 window.addEventListener("load", function(){
-window.minecraftOpts = [
-"game_frame","assets.epk",
-"CgAAAQAJaGlkZV9kb3duAQoACG1haW5NZW51CAAJaXRlbUxpbmUwABBQbGF5IEVhZ2xlcmNyYWZ0CAAJaXRlbUxpbmUxABFCZXRhIFNpbmdsZXBsYXllcggACWl0ZW1MaW5lMgAOKE1DLiBCZXRhIDEuMykIAAhpdGVtTGluawAdaHR0cHM6Ly9lYWdsZXJjcmFmdC5vcmcvYmV0YS8ACAAOc2VydmVyTGlzdExpbmsAIWh0dHBzOi8vZWFnbGVyLm51bGx5LnRlY2gvc2VydmVycwgAD3NlcnZlckxpc3RUaXRsZQAbQXlvbnVsbCBydW5zIGEgc2VydmVyIGxpc3Q6CQAHc2VydmVycwoAAAAFAQALaGlkZUFkZHJlc3MACAACaXAAJHdzczovL3NlYWxjcmFmdC5kZG5zLm5ldDo0NDIvc2VydmVycwgABG5hbWUACVNlYWxDcmFmdAABAAtoaWRlQWRkcmVzcwAIAAJpcAAdd3NzOi8vbWMucHJpbWl0dC5kZXYvc3Vydml2YWwIAARuYW1lAAdQcmltaXR0AAEAC2hpZGVBZGRyZXNzAAgAAmlwABt3c3M6Ly9hZW9uLW5ldHdvcmsubmV0L2Flb24IAARuYW1lAARBZW9uAAEAC2hpZGVBZGRyZXNzAAgAAmlwAB93c3M6Ly9wbGF5LnZhbmlsbGFjcmFmdHNtcC5vcmcvCAAEbmFtZQAMVmFuaWxsYUNyYWZ0AAEAC2hpZGVBZGRyZXNzAAgAAmlwAB13c3M6Ly9zdXMuc2hobm93aXNub3R0aGV0aS5tZQgABG5hbWUAEGF5dW5hbWkncyBzZXJ2ZXIAAA=="
-];
+const relayId = Math.floor(Math.random() * 3);
+window.eaglercraftOpts = {
+container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "MAIN",
+servers: [
+	{ serverName: "placeholder", serverAddress: "address here", hideAddress: false }
+],
+relays: [
+	{ addr: "wss://relay.deev.is/", name: "lax1dude relay #1", primary: relayId == 0 },
+	{ addr: "wss://relay.lax1dude.net/", name: "lax1dude relay #2", primary: relayId == 1 },
+	{ addr: "wss://relay.shhnowisnottheti.me/", name: "ayunami relay #1", primary: relayId == 2 }
+],
+mainMenu: { splashes: [
+"Darviglet!", "eaglerenophile!", "You Eagler!", "Yeeeeeee!", "yeee",
+"EEEEEEEEE!", "You Darvig!", "You Vigg!", ":>", "|>", "You Yumpster!"
+], eaglerLogo: false }};
 (function(){
 var q = window.location.search;
 if(typeof q === 'string' && q.startsWith("?")) {
@@ -31,7 +42,6 @@ if(typeof q === 'string' && q.startsWith("?")) {
 }
 })();
 main();
-});}
 </script>
 </head>
 <body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
