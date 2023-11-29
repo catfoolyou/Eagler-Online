@@ -4,13 +4,13 @@ There is full support for both singleplayer and multiplayer, though the latter i
 
 Fork this repo and deploy it if it gets blocked.
 
-# Running a multiplayer server
+## Running a multiplayer server
 1) Download this repo (the Java folder is what you need)
 2) Run `run.bat` or `run_unix.sh` in both bungee and bukkit folders
 3) Open the browser client
 4) Connect to ws://127.0.0.1:25565 to play on localhost
 
-# LAN Worlds [^1]
+## LAN Worlds [^1]
 Eaglercraft fully supports LAN worlds, you can share your world with any player and they can connect directly to it as if you are running a server in your browser.
 LAN worlds will work between any two devices connected to the internet, you are not limited to only players connected to your Wi-Fi network
 
@@ -22,7 +22,7 @@ Make sure they add the relay server your game opens the LAN world on to their "N
 
 THIS IS A REQUIRED STEP FOR A PERSON TO JOIN YOUR WORLD, IF THEY DO NOT HAVE THE RELAY YOUR WORLD IS HOSTED ON ADDED TO THEIR "Network Settings" THE GAME WILL BE UNABLE TO LOCATE THE WORLD
 
-# Creating a LAN Relay [^2]
+## Creating a LAN Relay [^2]
 Simply download `sp-relay.jar` and run `java -jar sp-relay.jar`
 Run `java -jar sp-relay.jar --debug` to view debug info like all the IPs of incoming connections, as it is not shown by default because logging all that info will reduce performance when the relay is being pinged many times a second depending on it's popularity.
 
