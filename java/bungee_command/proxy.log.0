@@ -1,0 +1,48 @@
+10:40:58 [INFO] Unable to initialize fancy terminal. To fix this on Windows, install the correct Microsoft Visual C++ 2008 Runtime
+10:40:58 [INFO] NOTE: This error is non crucial, and BungeeCord will still function correctly! Do not bug the author about it unless you are still unable to get it working
+10:40:58 [INFO] Enabled BungeeCord version unknown
+10:40:58 [INFO] Enabled plugin EaglerSkins version 1.0.0 by LAX1DUDE
+10:40:58 [INFO] Enabled plugin EaglerVoice version 1.0.0 by ayunami2000
+10:40:58 [INFO] Listening websockets on /0.0.0.0:25565
+10:40:59 [INFO] Server bans.txt changed, it will be reloaded automatically
+10:40:59 [INFO] Listening on /127.11.0.1:63616
+10:40:59 [INFO] Reload complete
+10:41:01 [SEVERE] the blacklist subscription URL 'https://g.lax1dude.net/eaglercraft/origin_blacklist.txt' is invalid
+10:41:01 [SEVERE] javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+10:41:01 [SEVERE] 	at sun.security.ssl.SSLSocketImpl.handleEOF(Unknown Source)
+10:41:01 [SEVERE] 	at sun.security.ssl.SSLSocketImpl.decode(Unknown Source)
+10:41:01 [SEVERE] 	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(Unknown Source)
+10:41:01 [SEVERE] 	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+10:41:01 [SEVERE] 	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+10:41:01 [SEVERE] 	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+10:41:01 [SEVERE] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+10:41:01 [SEVERE] 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(Unknown Source)
+10:41:01 [SEVERE] 	at net.md_5.bungee.eaglercraft.DomainBlacklist.update(DomainBlacklist.java:152)
+10:41:01 [SEVERE] 	at net.md_5.bungee.eaglercraft.DomainBlacklist.init(DomainBlacklist.java:121)
+10:41:01 [SEVERE] 	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:268)
+10:41:01 [SEVERE] 	at net.md_5.bungee.BungeeCord.main(BungeeCord.java:229)
+10:41:01 [SEVERE] Caused by: java.io.EOFException: SSL peer shut down incorrectly
+10:41:01 [SEVERE] 	at sun.security.ssl.SSLSocketInputRecord.read(Unknown Source)
+10:41:01 [SEVERE] 	at sun.security.ssl.SSLSocketInputRecord.readHeader(Unknown Source)
+10:41:01 [SEVERE] 	at sun.security.ssl.SSLSocketInputRecord.decode(Unknown Source)
+10:41:01 [SEVERE] 	at sun.security.ssl.SSLTransport.decode(Unknown Source)
+10:41:01 [SEVERE] 	... 11 more
+10:41:01 [SEVERE] the blacklist subscription URL 'https://raw.githubusercontent.com/LAX1DUDE/eaglercraft/main/stable-download/origin_blacklist.txt' is invalid
+10:41:01 [SEVERE] java.io.FileNotFoundException: https://raw.githubusercontent.com/LAX1DUDE/eaglercraft/main/stable-download/origin_blacklist.txt
+10:41:01 [SEVERE] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+10:41:01 [SEVERE] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+10:41:01 [SEVERE] 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+10:41:01 [SEVERE] 	at net.md_5.bungee.eaglercraft.DomainBlacklist.update(DomainBlacklist.java:153)
+10:41:01 [SEVERE] 	at net.md_5.bungee.eaglercraft.DomainBlacklist.init(DomainBlacklist.java:121)
+10:41:01 [SEVERE] 	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:268)
+10:41:01 [SEVERE] 	at net.md_5.bungee.BungeeCord.main(BungeeCord.java:229)
+10:45:41 [INFO] [Catfoolyou] <-> InitialHandler has connected
+10:45:41 [INFO] Player 'Catfoolyou' [/127.0.0.1] has remote websocket IP: 127.0.0.1
+10:45:41 [INFO] Player 'Catfoolyou' [/127.0.0.1] is using a client at: catfoolyou.github.io
+10:45:41 [INFO] [Catfoolyou] <-> ServerConnector [lobby] has connected
+10:46:58 [INFO] [Catfoolyou2] <-> InitialHandler has connected
+10:46:58 [INFO] Player 'Catfoolyou2' [/127.0.0.1] has remote websocket IP: 127.0.0.1
+10:46:58 [INFO] Player 'Catfoolyou2' [/127.0.0.1] is using a client at: catfoolyou.github.io
+10:46:58 [INFO] [Catfoolyou2] <-> ServerConnector [lobby] has connected
+10:49:37 [INFO] [Catfoolyou2] -> UpstreamBridge has disconnected
+10:49:37 [INFO] [Catfoolyou2] <-> DownstreamBridge <-> [lobby] has disconnected
