@@ -8,7 +8,7 @@ Fork this repo and deploy it if it gets blocked.
 1) Download this repo (the Java folder is what you need)
 2) Run `run.bat` or `run_unix.sh` in both bungee and bukkit folders
 3) Open the browser client
-4) Connect to ws://127.0.0.1:25565 to play on localhost
+4) Connect to `ws://127.0.0.1:25565` to play on localhost
 
 ## LAN Worlds [^1]
 Eaglercraft fully supports LAN worlds, you can share your world with any player and they can connect directly to it as if you are running a server in your browser.
