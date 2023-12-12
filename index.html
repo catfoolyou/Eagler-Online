@@ -22,11 +22,8 @@ const relayId = Math.floor(Math.random() * 3);
 window.eaglercraftOpts = {
 container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "MAIN",
 servers: [
-	{ serverName: "AssPixel", serverAddress: "wss://web.asspixel.net/CAP/" },
-	{ serverName: "VanillaCraft", serverAddress: "wss://play.vanillacraftsmp.org/" },
-	{ serverName: "SealCraft", serverAddress: "wss://sealcraft.ddns.net:442/servers" },
-	{ serverName: "BlobCraft", serverAddress: "wss://blobcraft.tk" },
-	{ serverName: "Aeon", serverAddress: "wss://aeon-network.net/aeon" },
+	{ serverName: "Localhost", serverAddress: "ws://127.0.0.1:25565" },
+	{ serverName: "Gitpod server #1", serverAddress: "wss://25565-catfoolyou-eaglerserver-4jdp6qm40b5.ws-us106.gitpod.io" },
 	{ serverName: "ayunami's server", serverAddress: "wss://sus.shhnowisnottheti.me" }
 ], hideDownServers: true,
 assetOverrides: {
@@ -46,8 +43,8 @@ relays: [
 	{ addr: "wss://relay.shhnowisnottheti.me/", name: "ayunami relay #1", primary: relayId == 2 }
 ],
 mainMenu: { splashes: [
-"Darviglet!", "eaglerenophile!", "You Eagler!", "Yeeeeeee!", "yeee",
-"EEEEEEEEE!", "You Darvig!", "You Vigg!", ":>", "|>", "You Yumpster!"
+"DMCA my ass!", "Doom 2: Hell on earth", "Localhost", "Yeeeeeee!", "Phobos Anomaly",
+"EEEEEEEEE!", "You Darvig!", "You Vigg!", "Gitpod", "I ran out of ideas. Just pretend this is funny, ok?", "You Yumpster!"
 ], eaglerLogo: false }};
 (function(){
 var q = window.location.search;
