@@ -1,4 +1,7 @@
 # An Eagler client in the browser
+
+[![pages-build-deployment](https://github.com/catfoolyou/Eagler-Online/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/catfoolyou/Eagler-Online/actions/workflows/pages/pages-build-deployment)
+
 Like my serverless client, this is 1.5.2 and may or may not be updated.
 There is full support for both singleplayer and multiplayer, though the latter is still in development.
 
